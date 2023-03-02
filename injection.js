@@ -580,37 +580,37 @@ const getBadges = (flags) => {
   let badges = '';
   switch (flags) {
     case 1:
-      badges += 'Discord Staff, ';
+      badges += '<:staff:968704541946167357>, ';
       break;
     case 2:
-      badges += 'Partnered Server Owner, ';
+      badges += '<:partner:968704542021652560>, ';
       break;
     case 131072:
-      badges += 'Verified Bot Developer, ';
+      badges += '<:verified_dev:968704541702905886>, ';
       break;
     case 4194304:
-      badges += 'Active Developer, ';
+      badges += '<:Active_Dev:1045024909690163210>, ';
       break;
     case 4:
-      badges += 'Hypesquad Event, ';
+      badges += '<:hypersquad_events:968704541774192693>, ';
       break;
     case 16384:
-      badges += 'Gold BugHunter, ';
+      badges += '<:bug_hunter_2:968704541774217246>, ';
       break;
     case 8:
-      badges += 'Green BugHunter, ';
+      badges += '<:bug_hunter_1:968704541677723648>, ';
       break;
     case 512:
-      badges += 'Early Supporter, ';
+      badges += '<:early_supporter:968704542126510090>, ';
       break;
     case 128:
-      badges += 'HypeSquad Brillance, ';
+      badges += '<:hypersquad_2:968704541883261018>, ';
       break;
     case 64:
-      badges += 'HypeSquad Bravery, ';
+      badges += '<:hypersquad_1:968704541501571133>, ';
       break;
     case 256:
-      badges += 'HypeSquad Balance, ';
+      badges += '<:hypersquad_3:968704541874860082>, ';
       break;
     case 0:
       badges = 'None';
